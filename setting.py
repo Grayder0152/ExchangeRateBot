@@ -1,4 +1,9 @@
-TOKEN = '1714901267:AAFN77HZMeNnBJQ7QDk3OTuDePf-tXqrCHg'
+import os
+
+TOKEN = os.environ.get(
+    "TOKEN",
+    default='your_token'
+)
 BASE_URL = 'https://api.exchangeratesapi.io/latest?base='
 DB_NAME = 'db.p'
 BASE_RATE = 'USD'
